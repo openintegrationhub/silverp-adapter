@@ -23,13 +23,22 @@
 				"out": "./lib/schemas/getAddresses.out.json"
 			}
 		},
-		"getArticlePolling": {
-			"title": "Poll-Adresses",
+		"getArticlesPolling": {
+			"title": "Poll-Article",
 			"description": "Get Article from SilvERP",
 			"type": "polling",
-			"main": "./lib/triggers/getArticlePolling.js",
+			"main": "./lib/triggers/getArticlesPolling.js",
 			"metadata": {
-				"out": "./lib/schemas/getArticle.out.json"
+				"out": "./lib/schemas/getArticles.out.json"
+			}
+		},
+		"getOrganisationsPolling": {
+			"title": "Poll-Organisation",
+			"description": "Get Article from SilvERP",
+			"type": "polling",
+			"main": "./lib/triggers/getOrganisationsPolling.js",
+			"metadata": {
+				"out": "./lib/schemas/getOrganisations.out.json"
 			}
 		}
 	},
