@@ -22,6 +22,15 @@
 			"metadata": {
 				"out": "./lib/schemas/getAddresses.out.json"
 			}
+		},
+		"getArticlePolling": {
+			"title": "Poll-Adresses",
+			"description": "Get Article from SilvERP",
+			"type": "polling",
+			"main": "./lib/triggers/getArticlePolling.js",
+			"metadata": {
+				"out": "./lib/schemas/getArticle.out.json"
+			}
 		}
 	},
 	"actions": {}
