@@ -23,13 +23,13 @@
 				"out": "./lib/schemas/getAddresses.out.json"
 			}
 		},
-		"getArticlesPolling": {
-			"title": "Poll-Article",
-			"description": "Get Article from SilvERP",
+		"getProductsPolling": {
+			"title": "Poll-Product",
+			"description": "Get Product from SilvERP",
 			"type": "polling",
-			"main": "./lib/triggers/getArticlesPolling.js",
+			"main": "./lib/triggers/getProductsPolling.js",
 			"metadata": {
-				"out": "./lib/schemas/getArticles.out.json"
+				"out": "./lib/schemas/getProductsPolling.out.json"
 			}
 		},
 		"getOrganisationsPolling": {
