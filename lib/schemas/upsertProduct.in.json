@@ -71,8 +71,7 @@
 		"articleGroups": {
 			"type": "array",
 			"title": "articleGroups",
-			"minItems": 1,
-			"required": false,
+			"required": true,
 			"note": "To which product- or article-group is the product related?",
 			"items": {
 				"type": "object",
