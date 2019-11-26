@@ -982,84 +982,84 @@
 					}
 				}
 			}
-		}
-	},
-	"boms": {
-		"type": "array",
-		"title": "boms",
-		"required": false,
-		"note": "Bill of material-lists of products related to a header-product",
-		"items": {
-			"type": "object",
-			"properties": {
-				"version": {
-					"type": "string",
-					"description": "Version number of the bom-list"
-				},
-				"bomItems": {
-					"type": "array",
-					"minItems": 1,
-					"description": "Set list items",
-					"items": {
-						"type": "object",
-						"properties": {
-							"amount": {
-								"type": "string",
-								"description": "How many times is the product needed in the list"
-							},
-							"factor": {
-								"type": "string",
-								"description": "Factor that multiplies the amount"
+		},
+		"boms": {
+			"type": "array",
+			"title": "boms",
+			"required": false,
+			"note": "Bill of material-lists of products related to a header-product",
+			"items": {
+				"type": "object",
+				"properties": {
+					"version": {
+						"type": "string",
+						"description": "Version number of the bom-list"
+					},
+					"bomItems": {
+						"type": "array",
+						"minItems": 1,
+						"description": "Set list items",
+						"items": {
+							"type": "object",
+							"properties": {
+								"amount": {
+									"type": "string",
+									"description": "How many times is the product needed in the list"
+								},
+								"factor": {
+									"type": "string",
+									"description": "Factor that multiplies the amount"
+								}
 							}
 						}
 					}
 				}
 			}
-		}
-	},
-	"choicers": {
-		"type": "array",
-		"title": "choicers",
-		"required": false,
-		"note": "Selection-lists for all kind of attributes that can be chosen out of a list or set of possible values - this lists can be extended by the user",
-		"items": {
-			"type": "object",
-			"properties": {
-				"description": {
-					"type": "string",
-					"description": "Name of the choicer-list"
-				},
-				"codeNo": {
-					"type": "number",
-					"description": "Number of the choicer-list"
-				},
-				"isManual": {
-					"type": "boolean",
-					"description": "Has the choicer-entry been added manually"
-				},
-				"isSystem": {
-					"type": "boolean",
-					"description": "Is this a system-choicer-entry (can not be changed or deleted by user)"
-				},
-				"choice": {
-					"type": "string",
-					"description": "Selectable item from the list"
-				},
-				"sort": {
-					"type": "number",
-					"description": "Sort order of the choicer-list-entry"
-				},
-				"strVal": {
-					"type": "string",
-					"description": "Can be returned on selection"
-				},
-				"numVal": {
-					"type": "number",
-					"description": "Can be returned on selection"
-				},
-				"bcVal": {
-					"type": "boolean",
-					"description": "Can be returned on selection"
+		},
+		"choicers": {
+			"type": "array",
+			"title": "choicers",
+			"required": false,
+			"note": "Selection-lists for all kind of attributes that can be chosen out of a list or set of possible values - this lists can be extended by the user",
+			"items": {
+				"type": "object",
+				"properties": {
+					"description": {
+						"type": "string",
+						"description": "Name of the choicer-list"
+					},
+					"codeNo": {
+						"type": "number",
+						"description": "Number of the choicer-list"
+					},
+					"isManual": {
+						"type": "boolean",
+						"description": "Has the choicer-entry been added manually"
+					},
+					"isSystem": {
+						"type": "boolean",
+						"description": "Is this a system-choicer-entry (can not be changed or deleted by user)"
+					},
+					"choice": {
+						"type": "string",
+						"description": "Selectable item from the list"
+					},
+					"sort": {
+						"type": "number",
+						"description": "Sort order of the choicer-list-entry"
+					},
+					"strVal": {
+						"type": "string",
+						"description": "Can be returned on selection"
+					},
+					"numVal": {
+						"type": "number",
+						"description": "Can be returned on selection"
+					},
+					"bcVal": {
+						"type": "boolean",
+						"description": "Can be returned on selection"
+					}
 				}
 			}
 		}
