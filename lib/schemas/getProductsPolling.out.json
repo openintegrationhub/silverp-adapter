@@ -304,6 +304,7 @@
 						"description": "Used in Europe for EU-trade tax control"
 					},
 					"currency": {
+						"title": "currency",
 						"type": "array",
 						"description": "Official language of the country",
 						"items": {
