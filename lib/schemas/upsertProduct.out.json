@@ -264,6 +264,7 @@
 		},
 		"country": {
 			"title": "country",
+			"type": "array",
 			"required": true,
 			"note": "Where has a product been produced",
 			"items": {
@@ -304,6 +305,7 @@
 					},
 					"currency": {
 						"type": "array",
+						"description": "Official language of the country",
 						"items": {
 							"type": "object",
 							"properties": {
@@ -348,8 +350,7 @@
 									"description": "Is this the system currency?"
 								}
 							}
-						},
-						"description": "Official language of the country"
+						}
 					},
 					"language": {
 						"type": "array",
