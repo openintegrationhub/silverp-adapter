@@ -16,55 +16,46 @@
 		"note": {
 			"type": "string",
 			"title": "note",
-			"required": false,
 			"note": "Long description of the product"
 		},
 		"extraDescription": {
 			"type": "string",
 			"title": "extraDescription",
-			"required": false,
 			"note": "More text space for description"
 		},
 		"gtin": {
 			"type": "string",
 			"title": "gtin",
-			"required": false,
 			"note": "Global trade item number, a worldwide unique number for the product, can be used for barcode and identification in foreign systems"
 		},
 		"costCalc": {
 			"type": "number",
-			"required": false,
 			"title": "costCalc",
 			"note": "Calculated costs of one unit of the product, is set manually or by a custom algorithm"
 		},
 		"costAvg": {
 			"type": "number",
 			"title": "costAvg",
-			"required": false,
 			"note": "Average costs of one unit of the product, is calculated each time an amount of units of the product is entering or leaving the stock"
 		},
 		"costLast": {
 			"type": "number",
 			"title": "costLast",
-			"required": false,
 			"note": "Last purchase price of one unit of the product"
 		},
 		"costList": {
 			"type": "number",
 			"title": "costList",
-			"required": false,
 			"note": "List purchase price of one unit of the product"
 		},
 		"costInventory": {
 			"type": "number",
 			"title": "costInventory",
-			"required": false,
 			"note": "Cost for one unit of the product for inventory / stacktaking"
 		},
 		"dtCostLast": {
 			"type": "string",
 			"title": "dtCostLast",
-			"required": false,
 			"format": "date-time",
 			"note": "Date of last purchse"
 		},
@@ -78,6 +69,7 @@
 				"properties": {
 					"type": {
 						"type": "string",
+						"required": true,
 						"enum": [
 							"default",
 							"shop"
@@ -98,91 +90,76 @@
 		"isSale": {
 			"type": "boolean",
 			"title": "isSale",
-			"required": false,
 			"note": "Can this product be sold?"
 		},
 		"isPurchase": {
 			"type": "boolean",
 			"title": "isPurchase",
-			"required": false,
 			"note": "Can this product be purchased?"
 		},
 		"isWorkStep": {
 			"type": "boolean",
 			"title": "isWorkStep",
-			"required": false,
 			"note": "Has this product to be treated as a  work-step?"
 		},
 		"isProduction": {
 			"type": "boolean",
 			"title": "isProduction",
-			"required": false,
 			"note": "Is the a product that has to be produced?"
 		},
 		"isStockItem": {
 			"type": "boolean",
 			"title": "isStockItem",
-			"required": false,
 			"note": "Must all stock related in and out of this product be related to a storage location?"
 		},
 		"isStockTracing": {
 			"type": "boolean",
 			"title": "isStockTracing",
-			"required": false,
 			"note": "Must all stock related in and out of this product be related to a storage location?"
 		},
 		"isCheckStock": {
 			"type": "boolean",
 			"title": "isCheckStock",
-			"required": false,
 			"note": "May the product be stored to an inspection stock on receive and before delivery? (for quality management)"
 		},
 		"isService": {
 			"type": "boolean",
 			"title": "isService",
-			"required": false,
 			"note": "Has this product to be treated as a service?"
 		},
 		"isPacking": {
 			"type": "boolean",
 			"title": "isPacking",
-			"required": false,
 			"note": "Has this product to be treated as a packing?"
 		},
 		"isConsumable": {
 			"type": "boolean",
 			"title": "isConsumable",
-			"required": false,
 			"note": "Has this product to be treated as a consumable?"
 		},
 		"isDivisible": {
 			"type": "boolean",
 			"title": "isDivisible",
-			"required": false,
 			"note": "Is this a divisible product?"
 		},
 		"isShipping": {
 			"type": "boolean",
 			"title": "isShipping",
-			"required": false,
 			"note": "Has this product to be treated as a shipping?"
 		},
 		"isCharges": {
 			"type": "boolean",
 			"title": "isSerialNo",
-			"required": false,
 			"note": "Is this product managed in, and related to charges"
 		},
 		"isSerialNo": {
 			"type": "boolean",
 			"title": "isSerialNo",
-			"required": false,
 			"note": "Is this product managed in, and related to serial numbers"
 		},
 		"status": {
 			"type": "string",
 			"title": "status",
-			"required": false,
 			"enum": [
 				"new",
 				"expiring",
@@ -193,126 +170,108 @@
 		"drawingNo": {
 			"type": "string",
 			"title": "drawingNo",
-			"required": false,
 			"note": "Drawing number of the product"
 		},
 		"version": {
 			"type": "string",
 			"title": "version",
-			"required": false,
 			"note": "Version of the product"
 		},
 		"dinStandard": {
 			"type": "string",
 			"title": "dinStandard",
-			"required": false,
 			"note": "DIN-standard number of the product (choicer)"
 		},
 		"isRohsCompliant": {
 			"type": "boolean",
 			"title": "isRohsCompliant",
-			"required": false,
 			"note": "Is this product compiant to the RoHS-policy 2011/65/EU of the European Union?"
 		},
 		"netWeight": {
 			"type": "number",
 			"title": "netWeight",
-			"required": false,
 			"note": "Net weight of one unit of the product measured in kg"
 		},
 		"grossWeight": {
 			"type": "number",
 			"title": "grossWeight",
-			"required": false,
 			"note": "Gross weight of one unit of the product measured in kg"
 		},
 		"density": {
 			"type": "number",
 			"title": "density",
-			"required": false,
 			"note": "Specific gravity of the product"
 		},
 		"length": {
 			"type": "number",
 			"title": "length",
-			"required": false,
 			"note": "Length of one unit of the product"
 		},
 		"width": {
 			"type": "number",
 			"title": "width",
-			"required": false,
 			"note": "Width of one unit of the product"
 		},
 		"strength": {
 			"type": "number",
 			"title": "strength",
-			"required": false,
 			"note": "Strength of one unit of the product"
 		},
 		"innerDiameter": {
 			"type": "number",
 			"title": "innerDiameter",
-			"required": false,
 			"note": "Inner diameter of one unit of the product"
 		},
 		"outerDiameter": {
 			"type": "number",
 			"title": "outerDiameter",
-			"required": false,
 			"note": "Outer diameter of one unit of the product"
 		},
 		"volume": {
 			"type": "number",
 			"title": "volume",
-			"required": false,
 			"note": "Volume of one unit of the product"
 		},
 		"isReverseCharge": {
 			"type": "boolean",
 			"title": "isReverseCharge",
-			"required": false,
 			"note": "Has this product to be treated as a reverse charge product (VAT has to be payed by the buyer)"
 		},
 		"isDiscount": {
 			"type": "boolean",
 			"title": "isDiscount",
-			"required": false,
 			"note": "Is it allowed to give a discount when selling the product?"
 		},
 		"isReduction": {
 			"type": "boolean",
 			"title": "isReduction",
-			"required": false,
 			"note": "Is the price for the product reduced?"
 		},
 		"isIntrastat": {
 			"type": "boolean",
 			"title": "isIntrastat",
-			"required": false,
 			"note": "Is the selling and buying of this product relevant to the EU-policy 638/2004, named intrastat?"
 		},
 		"isPreferential": {
 			"type": "boolean",
 			"title": "isPreferential",
-			"required": false,
 			"note": "Is the country of origin qualified for preference according to EU-policy 1207/2001, 1617/2006, 75/2008"
 		},
 		"customsTariff": {
 			"type": "string",
 			"title": "customsTariff",
-			"required": false,
 			"note": "Customs traiff number of the product"
 		},
 		"country": {
 			"title": "country",
-			"required": false,
+			"required": true,
 			"note": "Where has a product been produced",
 			"items": {
 				"type": "object",
 				"properties": {
 					"code": {
 						"type": "string",
+						"required": true,
 						"description": "IdRecord of the country"
 					},
 					"numberPlate": {
@@ -419,14 +378,12 @@
 		"replacementTime": {
 			"type": "number",
 			"title": "replacementTime",
-			"required": false,
 			"note": "Replacement time in days, how long does it take to get the product to stock"
 		},
 		"units": {
 			"type": "array",
 			"title": "units",
-			"required": false,
-			"minItems": 1,
+			"required": true,
 			"note": "Measuring of the product",
 			"items": {
 				"type": "object",
@@ -445,6 +402,7 @@
 					},
 					"description": {
 						"type": "string",
+						"required": true,
 						"description": "What is the name of the unit?|Pieces, meter, litres, seconds, bottles etc. (choicer)"
 					},
 					"abbreviation": {
@@ -457,13 +415,13 @@
 		"storages": {
 			"type": "array",
 			"title": "storages",
-			"required": false,
 			"note": "Where and how much is in the physical inventory of the stock of the product",
 			"items": {
 				"type": "object",
 				"properties": {
 					"name": {
 						"type": "string",
+						"required": true,
 						"description": "Name of the storage"
 					},
 					"description1": {
@@ -568,17 +526,18 @@
 		"charges": {
 			"type": "array",
 			"title": "charges",
-			"required": false,
 			"note": "If the product stock-holding is managed in charges (isCharges=false) then the related charges can be treated here",
 			"items": {
 				"type": "object",
 				"properties": {
 					"chargeNo": {
 						"type": "string",
+						"required": true,
 						"description": "Number / name of the charge"
 					},
 					"lotNo": {
 						"type": "string",
+						"required": true,
 						"description": "External charge no of the supplier"
 					},
 					"flag": {
@@ -720,17 +679,18 @@
 		"serialNumbers": {
 			"type": "array",
 			"title": "serialNumbers",
-			"required": false,
 			"note": "If the product stock-holding is managed in serial-numbers (isSerialNo=false) then the related serial-numbers can be treated here",
 			"items": {
 				"type": "object",
 				"properties": {
 					"chargeNo": {
 						"type": "string",
+						"required": true,
 						"description": "Number / name of the charge"
 					},
 					"lotNo": {
 						"type": "string",
+						"required": true,
 						"description": "External charge no of the supplier"
 					},
 					"flag": {
@@ -872,7 +832,6 @@
 		"picturesAndDocuments": {
 			"type": "array",
 			"title": "picturesAndDocuments",
-			"required": false,
 			"note": "Related pictures and documents to a product from out of the DMS",
 			"items": {
 				"type": "object",
@@ -887,6 +846,7 @@
 					},
 					"data": {
 						"type": "string",
+						"required": true,
 						"description": "File content"
 					}
 				}
@@ -895,13 +855,13 @@
 		"dynamicAttributes": {
 			"type": "array",
 			"title": "dynamicAttributes",
-			"required": false,
 			"note": "User defined product attributes",
 			"items": {
 				"type": "object",
 				"properties": {
 					"name": {
 						"type": "string",
+						"required": true,
 						"description": "Name of the attribute"
 					},
 					"fileContent": {
@@ -948,22 +908,23 @@
 		"sets": {
 			"type": "array",
 			"title": "sets",
-			"required": false,
 			"note": "Set-lists of products related to a header-product",
 			"items": {
 				"type": "object",
 				"properties": {
 					"name": {
 						"type": "string",
+						"required": true,
 						"description": "Name of the set"
 					},
 					"version": {
 						"type": "string",
+						"required": true,
 						"description": "Version number of the set-list"
 					},
 					"setItems": {
 						"type": "array",
-						"minItems": 1,
+						"required": true,
 						"description": "Set list items",
 						"items": {
 							"type": "object",
@@ -974,6 +935,7 @@
 								},
 								"factor": {
 									"type": "string",
+									"required": true,
 									"description": "Factor that multiplies the amount"
 								}
 							}
@@ -985,18 +947,18 @@
 		"boms": {
 			"type": "array",
 			"title": "boms",
-			"required": false,
 			"note": "Bill of material-lists of products related to a header-product",
 			"items": {
 				"type": "object",
 				"properties": {
 					"version": {
 						"type": "string",
+						"required": true,
 						"description": "Version number of the bom-list"
 					},
 					"bomItems": {
 						"type": "array",
-						"minItems": 1,
+						"required": true,
 						"description": "Set list items",
 						"items": {
 							"type": "object",
@@ -1018,13 +980,13 @@
 		"choicers": {
 			"type": "array",
 			"title": "choicers",
-			"required": false,
 			"note": "Selection-lists for all kind of attributes that can be chosen out of a list or set of possible values - this lists can be extended by the user",
 			"items": {
 				"type": "object",
 				"properties": {
 					"description": {
 						"type": "string",
+						"required": true,
 						"description": "Name of the choicer-list"
 					},
 					"codeNo": {
