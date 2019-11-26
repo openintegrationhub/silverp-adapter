@@ -353,35 +353,5 @@
 			"required": true,
 			"note": "Selection-lists for all kind of attributes that can be chosen out of a list or set of possible values - this lists can be extended by the user"
 		}
-	},
-	"definitons": {
-		"ArticleGroup": {
-			"title": "articleGroups",
-			"type": "object",
-			"properties": {
-				"type": {
-					"type": "string",
-					"title": "Typ",
-					"required": true,
-					"enum": [
-						"default",
-						"shop"
-					],
-					"description": "What kind of article-group is this?"
-				},
-				"code": {
-					"type": "string",
-					"title": "code",
-					"required": false,
-					"description": "Number for the article-group"
-				},
-				"description": {
-					"type": "string",
-					"title": "description",
-					"required": false,
-					"description": "Description or name of the article-group"
-				}
-			}
-		}
 	}
 }
