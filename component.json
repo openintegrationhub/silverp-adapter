@@ -42,5 +42,13 @@
 			}
 		}
 	},
-	"actions": {}
+	"actions": {
+		"upsertOrganization": {
+			"main": "./lib/actions/upsertProduct.js",
+			"title": "Upsert an Product in SilvERP",
+			"metadata": {
+				"in": "./lib/schemas/upsertProduct.in.json"
+			}
+		}
+	}
 }
