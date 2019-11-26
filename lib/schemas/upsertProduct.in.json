@@ -73,10 +73,7 @@
 			"title": "articleGroups",
 			"minItems": 1,
 			"required": true,
-			"note": "To which product- or article-group is the product related?",
-			"items": {
-				"$ref": "#/definitions/ArticleGroup"
-			}
+			"note": "To which product- or article-group is the product related?"
 		},
 		"isSale": {
 			"type": "boolean",
