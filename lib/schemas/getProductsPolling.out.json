@@ -7,6 +7,13 @@
 			"required": true,
 			"note": "product or article no (can be changes while life cycle)"
 		},
+		"uid": {
+			"type": "string",
+			"required": true,
+			"title": "Uid",
+			"note": "Product's uid",
+			"placeholder": "3gbdq1jtsvxjot"
+		},
 		"matchcode": {
 			"type": "string",
 			"title": "matchcode",
