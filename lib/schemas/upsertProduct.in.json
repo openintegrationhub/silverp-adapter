@@ -3,7 +3,7 @@
 	"properties": {
 		"articleNo": {
 			"type": "string",
-			"title": "Artiklenummer",
+			"title": "articleNo",
 			"required": true,
 			"note": "product or article no (can be changes while life cycle)"
 		},
