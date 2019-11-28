@@ -70,8 +70,7 @@
 			"type": "array",
 			"title": "articleGroups",
 			"required": true,
-			"note": "To which product- or article-group is the product related?",
-			"items": {}
+			"note": "To which product- or article-group is the product related?"
 		},
 		"isSale": {
 			"type": "boolean",
@@ -252,8 +251,7 @@
 			"title": "country",
 			"type": "array",
 			"required": true,
-			"note": "Where has a product been produced",
-			"items": {}
+			"note": "Where has a product been produced"
 		},
 		"replacementTime": {
 			"type": "number",
@@ -264,62 +262,47 @@
 			"type": "array",
 			"title": "units",
 			"required": true,
-			"note": "Measuring of the product",
-			"items": {}
+			"note": "Measuring of the product"
 		},
 		"storages": {
 			"type": "array",
 			"title": "storages",
-			"note": "Where and how much is in the physical inventory of the stock of the product",
-			"items": {}
+			"note": "Where and how much is in the physical inventory of the stock of the product"
 		},
 		"charges": {
 			"type": "array",
 			"title": "charges",
-			"note": "If the product stock-holding is managed in charges (isCharges=false) then the related charges can be treated here",
-			"items": {}
+			"note": "If the product stock-holding is managed in charges (isCharges=false) then the related charges can be treated here"
 		},
 		"serialNumbers": {
 			"type": "array",
 			"title": "serialNumbers",
-			"note": "If the product stock-holding is managed in serial-numbers (isSerialNo=false) then the related serial-numbers can be treated here",
-			"items": {}
+			"note": "If the product stock-holding is managed in serial-numbers (isSerialNo=false) then the related serial-numbers can be treated here"
 		},
 		"picturesAndDocuments": {
 			"type": "array",
 			"title": "picturesAndDocuments",
-			"note": "Related pictures and documents to a product from out of the DMS",
-			"items": {}
+			"note": "Related pictures and documents to a product from out of the DMS"
 		},
 		"dynamicAttributes": {
 			"type": "array",
 			"title": "dynamicAttributes",
-			"note": "User defined product attributes",
-			"items": {}
+			"note": "User defined product attributes"
 		},
 		"sets": {
 			"type": "array",
 			"title": "sets",
-			"note": "Set-lists of products related to a header-product",
-			"items": {}
+			"note": "Set-lists of products related to a header-product"
 		},
 		"boms": {
 			"type": "array",
 			"title": "boms",
-			"note": "Bill of material-lists of products related to a header-product",
-			"items": {}
+			"note": "Bill of material-lists of products related to a header-product"
 		},
-		"emailAddresses": {
+		"choicers": {
 			"type": "array",
-			"properties": {
-				"name": {
-					"type": "string"
-				},
-				"address": {
-					"type": "string",
-					"required": true
-				}
-			}
+			"title": "choicers",
+			"note": "Selection-lists for all kind of attributes that can be chosen out of a list or set of possible values - this lists can be extended by the user"
 		}
 	}
 }
