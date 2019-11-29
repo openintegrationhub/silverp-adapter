@@ -18,6 +18,7 @@
 const { getToken } = require('./lib/utils/silvererp');
 
 async function verifyCredentials(credentials, cb) {
+	console.log('Start Credentials verify');
 	try {
 		const token = await getToken(credentials);
 		if (token !== null) {
