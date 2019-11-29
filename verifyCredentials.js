@@ -19,10 +19,8 @@ const { getToken } = require('./lib/utils/silvererp');
 
 async function verifyCredentials(credentials, cb) {
 	try {
-		const cfg = {
-			apikey: credentials.apikey,
-		};
-		const token = await getToken(cfg);
+
+		const token = await getToken(credentials);
 
 		if (token !== null) {
 			cb(null, { verified: true });
