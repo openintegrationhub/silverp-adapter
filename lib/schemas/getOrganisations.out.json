@@ -1,15 +1,19 @@
 {
-    "type": "object",
-    "properties": {
-        "name": {
-            "type": "string",
-            "required": true,
-            "title": "Matchcode"
-        },
-        "rowid": {
-            "type": "string",
-            "required": true,
-            "title": "idRecord"
-        }
-    }
+	"type": "object",
+	"properties": {
+		"meta": {
+			"type": "object",
+			"properties": {
+				"idRecord": {
+					"required": true,
+					"type": "number"
+				}
+			}
+		},
+		"name": {
+			"type": "string",
+			"required": true,
+			"title": "Matchcode"
+		}
+	}
 }

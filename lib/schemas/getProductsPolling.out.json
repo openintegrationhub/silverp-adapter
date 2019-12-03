@@ -1,6 +1,15 @@
 {
 	"type": "object",
 	"properties": {
+		"meta": {
+			"type": "object",
+			"properties": {
+				"idRecord": {
+					"required": true,
+					"type": "number"
+				}
+			}
+		},
 		"articleNo": {
 			"type": "string",
 			"title": "Artiklenummer",
