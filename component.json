@@ -18,9 +18,9 @@
 			"title": "Poll-Adresses",
 			"description": "Get Address from SilvERP",
 			"type": "polling",
-			"main": "./lib/triggers/getAddressesPolling.js",
+			"main": "./lib/triggers/getAdressesPolling.js",
 			"metadata": {
-				"out": "./lib/schemas/getAddresses.out.json"
+				"out": "./lib/schemas/getAdresses.out.json"
 			}
 		},
 		"getProductsPolling": {
