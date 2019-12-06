@@ -7,12 +7,18 @@
 			"required": true,
 			"note": "product or article no (can be changes while life cycle)"
 		},
-		"uid": {
+		"oihUid": {
 			"type": "string",
 			"required": true,
-			"title": "Uid",
-			"note": "Product's uid",
+			"title": "OihUid",
+			"note": "Product's OihUid",
 			"placeholder": "3gbdq1jtsvxjot"
+		},
+		"idRecord": {
+			"type": "number",
+			"title": "idRecord of Product",
+			"note": "Product's idRecord",
+			"placeholder": "123456789"
 		},
 		"matchcode": {
 			"type": "string",
