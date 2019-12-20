@@ -31,11 +31,6 @@
 			"title": "subDescription",
 			"note": ""
 		},
-		"countryCodePhone": {
-			"type": "string",
-			"title": "countryCodePhone",
-			"note": ""
-		},
 		"intrastatCode": {
 			"type": "string",
 			"title": "intrastatCode",
