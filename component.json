@@ -40,6 +40,15 @@
 			"metadata": {
 				"out": "./lib/schemas/getOrganisations.out.json"
 			}
+		},
+		"getCountriesPolling": {
+			"title": "Poll-Countries",
+			"description": "Get Countries from SilvERP",
+			"type": "polling",
+			"main": "./lib/triggers/getCountriesPolling.js",
+			"metadata": {
+				"out": "./lib/schemas/getCountries.out.json"
+			}
 		}
 	},
 	"actions": {
@@ -62,6 +71,13 @@
 			"title": "Upsert an Unit in SilvERP",
 			"metadata": {
 				"in": "./lib/schemas/upsertUnit.in.json"
+			}
+		},
+		"upsertCountry": {
+			"main": "./lib/actions/upsertCountry.js",
+			"title": "Upsert an Country in SilvERP",
+			"metadata": {
+				"in": "./lib/schemas/upsertCountry.in.json"
 			}
 		}
 	}

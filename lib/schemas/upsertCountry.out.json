@@ -1,0 +1,55 @@
+{
+	"type": "object",
+	"properties": {
+		"code": {
+			"type": "string",
+			"title": "Country Code",
+			"note": "Code of Country"
+		},
+		"numberPlate": {
+			"type": "string",
+			"title": "Number Plate",
+			"note": "Numberplate of Country"
+		},
+		"description": {
+			"type": "string",
+			"title": "Description",
+			"note": "Description of Unit"
+		},
+		"decimalDigits": {
+			"type": "string",
+			"title": "decimalDigits",
+			"note": ""
+		},
+		"subCode": {
+			"type": "string",
+			"title": "subCode",
+			"note": ""
+		},
+		"subDescription": {
+			"type": "string",
+			"title": "subDescription",
+			"note": ""
+		},
+		"divisor": {
+			"type": "string",
+			"title": "divisor",
+			"note": ""
+		},
+		"factor": {
+			"type": "string",
+			"title": "Factor",
+			"note": ""
+		},
+		"base": {
+			"type": "string",
+			"title": "Base",
+			"note": ""
+		},
+		"isSystemCurrency": {
+			"type": "boolean",
+			"title": "isSystemCurrency",
+			"note": "Set as SystemCurrency?"
+		}
+	}
+}
