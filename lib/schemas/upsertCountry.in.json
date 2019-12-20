@@ -16,40 +16,30 @@
 			"title": "Description",
 			"note": "Description of Unit"
 		},
-		"decimalDigits": {
+		"areaCode": {
 			"type": "string",
-			"title": "decimalDigits",
+			"title": "areaCode",
 			"note": ""
 		},
-		"subCode": {
+		"isoCode": {
 			"type": "string",
-			"title": "subCode",
+			"title": "isoCode",
 			"note": ""
 		},
-		"subDescription": {
+		"isoDescription": {
 			"type": "string",
 			"title": "subDescription",
 			"note": ""
 		},
-		"divisor": {
+		"countryCodePhone": {
 			"type": "string",
-			"title": "divisor",
+			"title": "countryCodePhone",
 			"note": ""
 		},
-		"factor": {
+		"intrastatCode": {
 			"type": "string",
-			"title": "Factor",
+			"title": "intrastatCode",
 			"note": ""
-		},
-		"base": {
-			"type": "string",
-			"title": "Base",
-			"note": ""
-		},
-		"isSystemCurrency": {
-			"type": "boolean",
-			"title": "isSystemCurrency",
-			"note": "Set as SystemCurrency?"
 		}
 	}
 }
