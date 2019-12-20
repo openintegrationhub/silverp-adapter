@@ -1,0 +1,20 @@
+{
+	"type": "object",
+	"properties": {
+		"type": {
+			"type": "string",
+			"title": "Type",
+			"note": "Type of ArticleGroup"
+		},
+		"code": {
+			"type": "string",
+			"title": "Code",
+			"note": "Code of ArticleGroup"
+		},
+		"description": {
+			"type": "string",
+			"title": "Description",
+			"note": "Description of ArticleGroup"
+		}
+	}
+}

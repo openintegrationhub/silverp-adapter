@@ -43,11 +43,25 @@
 		}
 	},
 	"actions": {
-		"upsertOrganization": {
+		"upsertProduct": {
 			"main": "./lib/actions/upsertProduct.js",
 			"title": "Upsert an Product in SilvERP",
 			"metadata": {
 				"in": "./lib/schemas/upsertProduct.in.json"
+			}
+		},
+		"upsertArticleGroup": {
+			"main": "./lib/actions/upsertProduct.js",
+			"title": "Upsert an ArticleGroup in SilvERP",
+			"metadata": {
+				"in": "./lib/schemas/upsertArticleGroup.in.json"
+			}
+		},
+		"upsertUnit": {
+			"main": "./lib/actions/upsertUnit.js",
+			"title": "Upsert an Unit in SilvERP",
+			"metadata": {
+				"in": "./lib/schemas/upsertUnit.in.json"
 			}
 		}
 	}

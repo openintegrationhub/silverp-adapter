@@ -7,29 +7,16 @@
 			"required": true,
 			"note": "product or article no (can be changes while life cycle)"
 		},
-		"oihUid": {
-			"type": "string",
-			"required": true,
-			"title": "OihUid",
-			"note": "Product's OihUid",
-			"placeholder": "3gbdq1jtsvxjot"
-		},
-		"idRecord": {
-			"type": "number",
-			"title": "idRecord of Product",
-			"note": "Product's idRecord",
-			"placeholder": "123456789"
-		},
 		"matchcode": {
 			"type": "string",
 			"title": "matchcode",
 			"required": true,
 			"note": "Name of the product for fast and easy search  and find"
 		},
-		"note": {
+		"description": {
 			"type": "string",
-			"title": "note",
-			"note": "Long description of the product"
+			"title": "Description",
+			"note": "Description of the product"
 		},
 		"extraDescription": {
 			"type": "string",
@@ -72,11 +59,91 @@
 			"format": "date-time",
 			"note": "Date of last purchse"
 		},
-		"articleGroups": {
+		"status": {
+			"type": "string",
+			"title": "status",
+			"enum": [
+				"new",
+				"expiring",
+				"blocked"
+			],
+			"note": "Status of the product"
+		},
+		"drawingNo": {
+			"type": "string",
+			"title": "drawingNo",
+			"note": "Drawing number of the product"
+		},
+		"version": {
+			"type": "string",
+			"title": "version",
+			"note": "Version of the product"
+		},
+		"netWeight": {
+			"type": "number",
+			"title": "netWeight",
+			"note": "Net weight of one unit of the product measured in kg"
+		},
+		"grossWeight": {
+			"type": "number",
+			"title": "grossWeight",
+			"note": "Gross weight of one unit of the product measured in kg"
+		},
+		"density": {
+			"type": "number",
+			"title": "density",
+			"note": "Specific gravity of the product"
+		},
+		"length": {
+			"type": "number",
+			"title": "length",
+			"note": "Length of one unit of the product"
+		},
+		"width": {
+			"type": "number",
+			"title": "width",
+			"note": "Width of one unit of the product"
+		},
+		"strength": {
+			"type": "number",
+			"title": "strength",
+			"note": "Strength of one unit of the product"
+		},
+		"innerDiameter": {
+			"type": "number",
+			"title": "innerDiameter",
+			"note": "Inner diameter of one unit of the product"
+		},
+		"outerDiameter": {
+			"type": "number",
+			"title": "outerDiameter",
+			"note": "Outer diameter of one unit of the product"
+		},
+		"volume": {
+			"type": "number",
+			"title": "volume",
+			"note": "Volume of one unit of the product"
+		},
+		"customsTariff": {
+			"type": "string",
+			"title": "customsTariff",
+			"note": "Customs traiff number of the product"
+		},
+		"replacementTime": {
+			"type": "number",
+			"title": "replacementTime",
+			"note": "Replacement time in days, how long does it take to get the product to stock"
+		},
+		"active": {
+			"type": "boolean",
+			"title": "Active",
+			"note": ""
+		},
+		"taxInformation": {
 			"type": "array",
-			"title": "articleGroups",
-			"required": true,
-			"note": "To which product- or article-group is the product related?"
+			"title": "Tax Informations",
+			"note": "",
+			"items": {}
 		},
 		"isSale": {
 			"type": "boolean",
@@ -88,15 +155,15 @@
 			"title": "isPurchase",
 			"note": "Can this product be purchased?"
 		},
-		"isWorkStep": {
-			"type": "boolean",
-			"title": "isWorkStep",
-			"note": "Has this product to be treated as a  work-step?"
-		},
 		"isProduction": {
 			"type": "boolean",
 			"title": "isProduction",
 			"note": "Is the a product that has to be produced?"
+		},
+		"isWorkStep": {
+			"type": "boolean",
+			"title": "isWorkStep",
+			"note": "Has this product to be treated as a  work-step?"
 		},
 		"isStockItem": {
 			"type": "boolean",
@@ -148,80 +215,10 @@
 			"title": "isSerialNo",
 			"note": "Is this product managed in, and related to serial numbers"
 		},
-		"status": {
-			"type": "string",
-			"title": "status",
-			"enum": [
-				"new",
-				"expiring",
-				"blocked"
-			],
-			"note": "Status of the product"
-		},
-		"drawingNo": {
-			"type": "string",
-			"title": "drawingNo",
-			"note": "Drawing number of the product"
-		},
-		"version": {
-			"type": "string",
-			"title": "version",
-			"note": "Version of the product"
-		},
-		"dinStandard": {
-			"type": "string",
-			"title": "dinStandard",
-			"note": "DIN-standard number of the product (choicer)"
-		},
 		"isRohsCompliant": {
 			"type": "boolean",
 			"title": "isRohsCompliant",
 			"note": "Is this product compiant to the RoHS-policy 2011/65/EU of the European Union?"
-		},
-		"netWeight": {
-			"type": "number",
-			"title": "netWeight",
-			"note": "Net weight of one unit of the product measured in kg"
-		},
-		"grossWeight": {
-			"type": "number",
-			"title": "grossWeight",
-			"note": "Gross weight of one unit of the product measured in kg"
-		},
-		"density": {
-			"type": "number",
-			"title": "density",
-			"note": "Specific gravity of the product"
-		},
-		"length": {
-			"type": "number",
-			"title": "length",
-			"note": "Length of one unit of the product"
-		},
-		"width": {
-			"type": "number",
-			"title": "width",
-			"note": "Width of one unit of the product"
-		},
-		"strength": {
-			"type": "number",
-			"title": "strength",
-			"note": "Strength of one unit of the product"
-		},
-		"innerDiameter": {
-			"type": "number",
-			"title": "innerDiameter",
-			"note": "Inner diameter of one unit of the product"
-		},
-		"outerDiameter": {
-			"type": "number",
-			"title": "outerDiameter",
-			"note": "Outer diameter of one unit of the product"
-		},
-		"volume": {
-			"type": "number",
-			"title": "volume",
-			"note": "Volume of one unit of the product"
 		},
 		"isReverseCharge": {
 			"type": "boolean",
@@ -247,68 +244,6 @@
 			"type": "boolean",
 			"title": "isPreferential",
 			"note": "Is the country of origin qualified for preference according to EU-policy 1207/2001, 1617/2006, 75/2008"
-		},
-		"customsTariff": {
-			"type": "string",
-			"title": "customsTariff",
-			"note": "Customs traiff number of the product"
-		},
-		"country": {
-			"title": "country",
-			"type": "array",
-			"required": true,
-			"note": "Where has a product been produced"
-		},
-		"replacementTime": {
-			"type": "number",
-			"title": "replacementTime",
-			"note": "Replacement time in days, how long does it take to get the product to stock"
-		},
-		"units": {
-			"type": "array",
-			"title": "units",
-			"required": true,
-			"note": "Measuring of the product"
-		},
-		"storages": {
-			"type": "array",
-			"title": "storages",
-			"note": "Where and how much is in the physical inventory of the stock of the product"
-		},
-		"charges": {
-			"type": "array",
-			"title": "charges",
-			"note": "If the product stock-holding is managed in charges (isCharges=false) then the related charges can be treated here"
-		},
-		"serialNumbers": {
-			"type": "array",
-			"title": "serialNumbers",
-			"note": "If the product stock-holding is managed in serial-numbers (isSerialNo=false) then the related serial-numbers can be treated here"
-		},
-		"picturesAndDocuments": {
-			"type": "array",
-			"title": "picturesAndDocuments",
-			"note": "Related pictures and documents to a product from out of the DMS"
-		},
-		"dynamicAttributes": {
-			"type": "array",
-			"title": "dynamicAttributes",
-			"note": "User defined product attributes"
-		},
-		"sets": {
-			"type": "array",
-			"title": "sets",
-			"note": "Set-lists of products related to a header-product"
-		},
-		"boms": {
-			"type": "array",
-			"title": "boms",
-			"note": "Bill of material-lists of products related to a header-product"
-		},
-		"choicers": {
-			"type": "array",
-			"title": "choicers",
-			"note": "Selection-lists for all kind of attributes that can be chosen out of a list or set of possible values - this lists can be extended by the user"
 		}
 	}
 }

@@ -1,0 +1,30 @@
+{
+	"type": "object",
+	"properties": {
+		"isPurchase": {
+			"type": "string",
+			"title": "Type",
+			"note": "Is Unit for Purchase"
+		},
+		"isSale": {
+			"type": "string",
+			"title": "Code",
+			"note": "Is Unit for Sale"
+		},
+		"isProduction": {
+			"type": "string",
+			"title": "Description",
+			"note": "Is Unit for Production"
+		},
+		"description": {
+			"type": "string",
+			"title": "Description",
+			"note": "Description of Unit"
+		},
+		"abbreviation": {
+			"type": "string",
+			"title": "abbreviation",
+			"note": "abbreviation of Unit"
+		}
+	}
+}
