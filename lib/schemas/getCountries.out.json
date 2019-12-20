@@ -1,0 +1,19 @@
+{
+	"type": "object",
+	"properties": {
+		"meta": {
+			"type": "object",
+			"properties": {
+				"idRecord": {
+					"required": true,
+					"type": "number"
+				}
+			}
+		},
+		"code": {
+			"type": "string",
+			"required": true,
+			"title": "code"
+		}
+	}
+}
