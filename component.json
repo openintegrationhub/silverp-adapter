@@ -10,6 +10,20 @@
 				"required": true,
 				"viewClass": "TextFieldWithNoteView",
 				"note": "Please use the <b>SilvERP</b> API-Key."
+			},
+			"applicationUid": {
+				"label": "Application Uid",
+				"required": true,
+				"viewClass": "TextFieldView",
+				"note": "Application Uid identify where the Data is coming from",
+				"placeholder": "application123456"
+			},
+			"domainId": {
+				"label": "Domain Id",
+				"required": false,
+				"viewClass": "TextFieldView",
+				"note": "Domain Id from Meta Data Repository",
+				"placeholder": "5d3031a20cbe7c00115c7d8f"
 			}
 		}
 	},
