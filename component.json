@@ -63,15 +63,6 @@
 			"metadata": {
 				"out": "./lib/schemas/getCountries.out.json"
 			}
-		},
-		"getUnitsPolling": {
-			"title": "Poll-Units",
-			"description": "Get Units from SilvERP",
-			"type": "polling",
-			"main": "./lib/triggers/getCUnitsPolling.js",
-			"metadata": {
-				"out": "./lib/schemas/getUnits.out.json"
-			}
 		}
 	},
 	"actions": {
@@ -101,13 +92,6 @@
 			"title": "Upsert an ArticleGroup in SilvERP",
 			"metadata": {
 				"in": "./lib/schemas/upsertArticleGroup.in.json"
-			}
-		},
-		"upsertUnit": {
-			"main": "./lib/actions/upsertUnit.js",
-			"title": "Upsert an Unit in SilvERP",
-			"metadata": {
-				"in": "./lib/schemas/upsertUnit.in.json"
 			}
 		},
 		"upsertCountry": {
