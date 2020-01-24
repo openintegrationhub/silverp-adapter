@@ -82,11 +82,11 @@
 				"in": "./lib/schemas/upsertProduct.in.json"
 			}
 		},
-		"upsertOrganization": {
-			"main": "./lib/actions/upsertOrganization.js",
+		"upsertOrganisation": {
+			"main": "./lib/actions/upsertOrganisation.js",
 			"title": "Upsert an Organization in SilvERP",
 			"metadata": {
-				"in": "./lib/schemas/upsertOrganization.in.json"
+				"in": "./lib/schemas/upsertOrganisation.in.json"
 			}
 		},
 		"upsertAddress": {
