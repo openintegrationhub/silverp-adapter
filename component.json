@@ -43,7 +43,7 @@
 			"type": "polling",
 			"main": "./lib/triggers/getProductsPolling.js",
 			"metadata": {
-				"out": "./lib/schemas/getProductsPolling.out.json"
+				"out": "./lib/schemas/getProducts.out.json"
 			}
 		},
 		"getOrganisationsPolling": {
@@ -63,6 +63,15 @@
 			"metadata": {
 				"out": "./lib/schemas/getCountries.out.json"
 			}
+		},
+		"getUnitsPolling": {
+			"title": "Poll-Units",
+			"description": "Get Units from SilvERP",
+			"type": "polling",
+			"main": "./lib/triggers/getCUnitsPolling.js",
+			"metadata": {
+				"out": "./lib/schemas/getUnits.out.json"
+			}
 		}
 	},
 	"actions": {
@@ -71,6 +80,20 @@
 			"title": "Upsert an Product in SilvERP",
 			"metadata": {
 				"in": "./lib/schemas/upsertProduct.in.json"
+			}
+		},
+		"upsertOrganization": {
+			"main": "./lib/actions/upsertOrganization.js",
+			"title": "Upsert an Organization in SilvERP",
+			"metadata": {
+				"in": "./lib/schemas/upsertOrganization.in.json"
+			}
+		},
+		"upsertAddress": {
+			"main": "./lib/actions/upsertAddress.js",
+			"title": "Upsert an Address in SilvERP",
+			"metadata": {
+				"in": "./lib/schemas/upsertAddress.in.json"
 			}
 		},
 		"upsertArticleGroup": {

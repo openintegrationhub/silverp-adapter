@@ -1,0 +1,39 @@
+{
+	"type": "object",
+	"properties": {
+		"meta": {
+			"type": "object",
+			"properties": {
+				"idRecord": {
+					"required": true,
+					"type": "number"
+				}
+			}
+		},
+		"isPurchase": {
+			"type": "boolean",
+			"required": false,
+			"title": "PurchaseProduct"
+		},
+		"isSale": {
+			"type": "boolean",
+			"required": false,
+			"title": "SaleProduct"
+		},
+		"isProduction": {
+			"type": "boolean",
+			"required": false,
+			"title": "ProductionProduct"
+		},
+		"description": {
+			"type": "string",
+			"required": true,
+			"title": "Description"
+		},
+		"abbreviation": {
+			"type": "string",
+			"required": false,
+			"title": "abbreviation"
+		}
+	}
+}
