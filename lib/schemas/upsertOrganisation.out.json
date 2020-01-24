@@ -1,0 +1,17 @@
+{
+	"type": "object",
+	"properties": {
+		"recordUid": {
+			"type": "string",
+			"required": true,
+			"title": "recordUid",
+			"note": "Product's' recordUid",
+			"placeholder": "25mop1jxq2ss3x"
+		},
+		"name": {
+			"type": "string",
+			"required": true,
+			"title": "Matchcode"
+		}
+	}
+}
