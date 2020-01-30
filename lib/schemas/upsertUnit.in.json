@@ -8,6 +8,11 @@
 			"note": "Product's' recordUid",
 			"placeholder": "25mop1jxq2ss3x"
 		},
+		"unit": {
+			"type": "string",
+			"title": "Unit",
+			"note": "Name of Unit"
+		},
 		"isPurchase": {
 			"type": "string",
 			"title": "isPurchase",
@@ -27,11 +32,6 @@
 			"type": "string",
 			"title": "description",
 			"note": "Description of Unit"
-		},
-		"abbreviation": {
-			"type": "string",
-			"title": "abbreviation",
-			"note": "abbreviation of Unit"
 		}
 	}
 }
