@@ -93,6 +93,13 @@
 			"metadata": {
 				"in": "./lib/schemas/upsertCountry.in.json"
 			}
+		},
+		"upsertUnit": {
+			"main": "./lib/actions/upsertUnit.js",
+			"title": "Upsert an Unit in SilvERP",
+			"metadata": {
+				"in": "./lib/schemas/upsertUnit.in.json"
+			}
 		}
 	}
 }
