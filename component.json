@@ -54,6 +54,15 @@
 			"metadata": {
 				"out": "./lib/schemas/getCountries.out.json"
 			}
+		},
+		"getUnitsPolling": {
+			"title": "Poll-Units",
+			"description": "Get Units from SilvERP",
+			"type": "polling",
+			"main": "./lib/triggers/getUnitsPolling.js",
+			"metadata": {
+				"out": "./lib/schemas/getUnits.out.json"
+			}
 		}
 	},
 	"actions": {
