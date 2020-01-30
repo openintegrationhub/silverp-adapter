@@ -46,15 +46,6 @@
 				"out": "./lib/schemas/getProducts.out.json"
 			}
 		},
-		"getOrganisationsPolling": {
-			"title": "Poll-Organisation",
-			"description": "Get Article from SilvERP",
-			"type": "polling",
-			"main": "./lib/triggers/getOrganisationsPolling.js",
-			"metadata": {
-				"out": "./lib/schemas/getOrganisations.out.json"
-			}
-		},
 		"getCountriesPolling": {
 			"title": "Poll-Countries",
 			"description": "Get Countries from SilvERP",
@@ -71,13 +62,6 @@
 			"title": "Upsert an Product in SilvERP",
 			"metadata": {
 				"in": "./lib/schemas/upsertProduct.in.json"
-			}
-		},
-		"upsertOrganisation": {
-			"main": "./lib/actions/upsertOrganisation.js",
-			"title": "Upsert an Organization in SilvERP",
-			"metadata": {
-				"in": "./lib/schemas/upsertOrganisation.in.json"
 			}
 		},
 		"upsertAddress": {
