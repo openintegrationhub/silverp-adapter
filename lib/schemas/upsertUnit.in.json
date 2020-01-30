@@ -10,22 +10,22 @@
 		},
 		"isPurchase": {
 			"type": "string",
-			"title": "Type",
+			"title": "isPurchase",
 			"note": "Is Unit for Purchase"
 		},
 		"isSale": {
 			"type": "string",
-			"title": "Code",
+			"title": "isSale",
 			"note": "Is Unit for Sale"
 		},
 		"isProduction": {
 			"type": "string",
-			"title": "Description",
+			"title": "isProduction",
 			"note": "Is Unit for Production"
 		},
 		"description": {
 			"type": "string",
-			"title": "Description",
+			"title": "description",
 			"note": "Description of Unit"
 		},
 		"abbreviation": {
