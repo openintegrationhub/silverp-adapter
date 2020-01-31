@@ -10,10 +10,36 @@
 				}
 			}
 		},
-		"code": {
+		"uid": {
 			"type": "string",
 			"required": true,
-			"title": "code"
+			"title": "Coutry Uid"
+		},
+		"numberPlate": {
+			"type": "string",
+			"title": "numberPlate"
+		},
+		"description": {
+			"type": "string",
+			"required": true,
+			"title": "description"
+		},
+		"areaCode": {
+			"type": "string",
+			"required": true,
+			"title": "areaCode"
+		},
+		"isoCode": {
+			"type": "string",
+			"title": "isoCode"
+		},
+		"isoDescription": {
+			"type": "string",
+			"title": "isoDescription"
+		},
+		"intrastCode": {
+			"type": "string",
+			"title": "intrastCode"
 		}
 	}
 }

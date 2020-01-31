@@ -10,10 +10,46 @@
 				}
 			}
 		},
-		"name": {
+		"uid": {
 			"type": "string",
 			"required": true,
-			"title": "Name"
+			"title": "Uid",
+			"note": "Product's uid",
+			"placeholder": "3gbdq1jtsvxjot"
+		},
+		"firstName": {
+			"type": "string",
+			"required": true,
+			"title": "Vorname"
+		},
+		"lastName": {
+			"type": "string",
+			"required": true,
+			"title": "Nachname"
+		},
+		"street": {
+			"type": "string",
+			"title": "street"
+		},
+		"city": {
+			"type": "string",
+			"title": "city"
+		},
+		"zipCode": {
+			"type": "string",
+			"title": "zipCode"
+		},
+		"uidCountry": {
+			"type": "string",
+			"title": "Country Uid"
+		},
+		"code": {
+			"type": "string",
+			"title": "Country Code"
+		},
+		"description": {
+			"type": "string",
+			"title": "Country Description"
 		}
 	}
 }

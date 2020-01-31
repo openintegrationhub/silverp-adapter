@@ -30,6 +30,24 @@
 			"title": "extraDescription",
 			"note": "More text space for description"
 		},
+		"unitUid": {
+			"type": "string",
+			"title": "Unit Uid",
+			"required": true,
+			"note": "Use Uid for Identifikation form ur System"
+		},
+		"articleGroupUid": {
+			"type": "string",
+			"title": "ArticleGroup Uid",
+			"required": true,
+			"note": "Use Uid for Identifikation form ur System"
+		},
+		"countryUid": {
+			"type": "string",
+			"title": "Country Uid",
+			"required": true,
+			"note": "Use Uid for Identifikation form ur System"
+		},
 		"gtin": {
 			"type": "string",
 			"title": "gtin",
@@ -75,11 +93,6 @@
 				"blocked"
 			],
 			"note": "Status of the product"
-		},
-		"drawingNo": {
-			"type": "string",
-			"title": "drawingNo",
-			"note": "Drawing number of the product"
 		},
 		"version": {
 			"type": "string",
@@ -131,126 +144,10 @@
 			"title": "volume",
 			"note": "Volume of one unit of the product"
 		},
-		"customsTariff": {
-			"type": "string",
-			"title": "customsTariff",
-			"note": "Customs traiff number of the product"
-		},
 		"replacementTime": {
 			"type": "number",
 			"title": "replacementTime",
 			"note": "Replacement time in days, how long does it take to get the product to stock"
-		},
-		"active": {
-			"type": "boolean",
-			"title": "Active",
-			"note": ""
-		},
-		"taxInformation": {
-			"type": "array",
-			"title": "Tax Informations",
-			"note": "",
-			"items": {}
-		},
-		"isSale": {
-			"type": "boolean",
-			"title": "isSale",
-			"note": "Can this product be sold?"
-		},
-		"isPurchase": {
-			"type": "boolean",
-			"title": "isPurchase",
-			"note": "Can this product be purchased?"
-		},
-		"isProduction": {
-			"type": "boolean",
-			"title": "isProduction",
-			"note": "Is the a product that has to be produced?"
-		},
-		"isWorkStep": {
-			"type": "boolean",
-			"title": "isWorkStep",
-			"note": "Has this product to be treated as a  work-step?"
-		},
-		"isStockItem": {
-			"type": "boolean",
-			"title": "isStockItem",
-			"note": "Must all stock related in and out of this product be related to a storage location?"
-		},
-		"isStockTracing": {
-			"type": "boolean",
-			"title": "isStockTracing",
-			"note": "Must all stock related in and out of this product be related to a storage location?"
-		},
-		"isCheckStock": {
-			"type": "boolean",
-			"title": "isCheckStock",
-			"note": "May the product be stored to an inspection stock on receive and before delivery? (for quality management)"
-		},
-		"isService": {
-			"type": "boolean",
-			"title": "isService",
-			"note": "Has this product to be treated as a service?"
-		},
-		"isPacking": {
-			"type": "boolean",
-			"title": "isPacking",
-			"note": "Has this product to be treated as a packing?"
-		},
-		"isConsumable": {
-			"type": "boolean",
-			"title": "isConsumable",
-			"note": "Has this product to be treated as a consumable?"
-		},
-		"isDivisible": {
-			"type": "boolean",
-			"title": "isDivisible",
-			"note": "Is this a divisible product?"
-		},
-		"isShipping": {
-			"type": "boolean",
-			"title": "isShipping",
-			"note": "Has this product to be treated as a shipping?"
-		},
-		"isCharges": {
-			"type": "boolean",
-			"title": "isSerialNo",
-			"note": "Is this product managed in, and related to charges"
-		},
-		"isSerialNo": {
-			"type": "boolean",
-			"title": "isSerialNo",
-			"note": "Is this product managed in, and related to serial numbers"
-		},
-		"isRohsCompliant": {
-			"type": "boolean",
-			"title": "isRohsCompliant",
-			"note": "Is this product compiant to the RoHS-policy 2011/65/EU of the European Union?"
-		},
-		"isReverseCharge": {
-			"type": "boolean",
-			"title": "isReverseCharge",
-			"note": "Has this product to be treated as a reverse charge product (VAT has to be payed by the buyer)"
-		},
-		"isDiscount": {
-			"type": "boolean",
-			"title": "isDiscount",
-			"note": "Is it allowed to give a discount when selling the product?"
-		},
-		"isReduction": {
-			"type": "boolean",
-			"title": "isReduction",
-			"note": "Is the price for the product reduced?"
-		},
-		"isIntrastat": {
-			"type": "boolean",
-			"title": "isIntrastat",
-			"note": "Is the selling and buying of this product relevant to the EU-policy 638/2004, named intrastat?"
-		},
-		"isPreferential": {
-			"type": "boolean",
-			"title": "isPreferential",
-			"note": "Is the country of origin qualified for preference according to EU-policy 1207/2001, 1617/2006, 75/2008"
 		}
 	}
 }

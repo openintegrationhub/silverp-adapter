@@ -12,6 +12,16 @@
 			"type": "string",
 			"required": true,
 			"title": "Name"
+		},
+		"country": {
+			"type": "string",
+			"required": true,
+			"title": "countryName"
+		},
+		"countryUid": {
+			"type": "string",
+			"required": true,
+			"title": "countryUid"
 		}
 	}
 }
